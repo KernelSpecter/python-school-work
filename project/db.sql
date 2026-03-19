@@ -5,6 +5,6 @@ create table students (
     name varchar(255) not null,
     marks int not null
 );
-insert into students (name, marks) values ('Alice', 85);
-insert into students (name, marks) values ('Bob', 90);
-insert into students (name, marks) values ('Charlie', 78);
+insert into students (id, name, marks) values ('Alice', 85);
+insert into students (id, name, marks) values ('Bob', 90);
+insert into students (id, name, marks) values ('Charlie', 78);
