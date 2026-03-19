@@ -15,7 +15,7 @@ choice = int(input("Enter your choice: "))
 if choice == 1:
     name = input("Enter student name: ")
     marks = int(input("Enter student marks: "))
-    cursor.execute("INSERT INTO students (id, name, marks) VALUES (%s, %s)", (name, marks))
+    cursor.execute("INSERT INTO students (name, marks) VALUES (%s, %s)", (name, marks))
     conn.commit()
     print("Student added successfully!")
 elif choice == 2:
@@ -36,4 +36,3 @@ elif choice == 4:
     print("Student deleted successfully!")
 else:
     print("Invalid choice!")
-    
